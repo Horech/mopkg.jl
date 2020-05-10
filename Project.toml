@@ -1,0 +1,13 @@
+name = "mopkg"
+uuid = "3fdd8fc6-cf8d-4f34-aaf0-02c392e47cc8"
+authors = ["PioFry"]
+version = "0.1.0"
+
+[compat]
+julia = "1.3.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
