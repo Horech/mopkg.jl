@@ -1,7 +1,8 @@
 module mopkg
 
 "Divide by half method implementation finds local minimum for single variable functions"
-function divByHalf(f, a, b, err = 1e-5, maxiter = 10000)
+function divByHalf(f, a, err = 1e-5, maxiter = 10000)
+	b = a^2
 	middle = (a+b)/2
 	diff = b - a
 	iter= 0
@@ -31,7 +32,7 @@ function divByHalf(f, a, b, err = 1e-5, maxiter = 10000)
 			return
 		end
 	end
-	return (middle, iter) end
+	return (middle, f(middle)) end
 
 	export divByHalf
 
