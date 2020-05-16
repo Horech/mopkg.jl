@@ -7,7 +7,7 @@ function divByHalf(f, a, b, err = 1e-5, maxiter = 10000)
 	iter= 0
 
 	if(a >= b)
-		print("a parameter must be smaller than b parameter")
+		#a parameter must be smaller than b parameter
 		return
 	end
 
@@ -27,7 +27,7 @@ function divByHalf(f, a, b, err = 1e-5, maxiter = 10000)
 		end
 		diff = b - a
 		if(iter > maxiter)
-			print("Max iterations exceeded")
+			#Max iterations exceeded
 			return
 		end
 	end
