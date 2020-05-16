@@ -32,7 +32,7 @@ function divByHalf(f, a, err = 1e-5, maxiter = 10000)
 			return
 		end
 	end
-	return (middle, f(middle)) end
+	return (f(middle), middle) end
 
 	export divByHalf
 
